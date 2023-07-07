@@ -1,4 +1,4 @@
-Remember that you need to install TWS in order to run watchlist.py. You don't need to create an account when you download it, there's an option: 'Try demo'. When you click on it you just need to write some random email to log in. Then to set up the API you have to go to File -> Global Configuration -> API -> Settings -> Enable ActiveX and Socket clients and also uncheck Read-Only API.
+Remember that you need to install TWS in order to run watchlist.py. https://www.interactivebrokers.com/en/trading/tws.php. You don't need to create an account when you download it, there's an option: 'Try demo'. When you click on it you just need to write some random email to log in. Then to set up the API you have to go to File -> Global Configuration -> API -> Settings -> Enable ActiveX and Socket clients and also uncheck Read-Only API.
 
 Updated 07-07-2023
 
