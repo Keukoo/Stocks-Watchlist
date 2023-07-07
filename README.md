@@ -4,7 +4,7 @@ watchlist.py -> main and final code
 
 news.py -> approach to get news every second and updating the GUI only when we get a new one
 
-splits.py: initial approach for the watchlist project. Here we can use the method for retrieving data for Sector, Industry, News, and Splits past. However, these data sources do not update every second in this implementation, and they cause the GUI to become unresponsive. So this file won't be the final one.
+splits.py -> initial approach for the watchlist project. Here we can use the method for retrieving data for Sector, Industry, News, and Splits past. However, these data sources do not update every second in this implementation, and they cause the GUI to become unresponsive. So this file won't be the final one.
 
 
 Watchlist:
