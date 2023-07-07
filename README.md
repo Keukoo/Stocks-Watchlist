@@ -6,11 +6,11 @@ You don't need to create an account when you download it, there's an option: 'Tr
 
 Updated 07-07-2023
 
-watchlist.py -> main and final code
+watchlist.py -> MAIN AND FINAL CODE
 
-news.py -> approach to get news every second and updating the GUI only when we get a new one
+news.py *use only for reference-> approach to get news every second and updating the GUI only when we get a new one
 
-splits.py -> initial approach for the watchlist project. Here we can use the method for retrieving data for Sector, Industry, News, and Splits past. However, these data sources do not update every second in this implementation, and they cause the GUI to become unresponsive. So this file won't be the final one.
+splits.py *use only for reference-> initial approach for the watchlist project. Here we can use the method for retrieving data for Sector, Industry, News, and Splits past. However, these data sources do not update every second in this implementation, and they cause the GUI to become unresponsive. So this file won't be the final one.
 
 
 Watchlist:
@@ -44,7 +44,7 @@ TO DO:
 -"Sector" and "Industry" columns, data source: finviz module, I need to display not only the sector and industry for each symbol but also the daily growth ranking number and the growth percentage of the sector and industry, as shown in the screenshot. For example, "5- Healthcare (-1.04%)" would mean that after checking with finviz for the sectors and industries with the highest percentage growth today, the Healthcare sector is in the top 5 but has lost 1.04% today. (check splits.py -> get_splits for an example, but they do not upload every second). If the sector or industry has a positive % then change the cell color to darkgold like in splits.py (check screenshot below)
 ![image](https://github.com/Keukoo/Stocks-Watchlist/assets/138369317/a20c2e55-ebcc-45a0-bea6-4a3cb5c3424a)
 
--"Splits Past" column, data source: yfinance. I want the data to appear as shown in this screenshot (check funcion get_splits from splits.py):
+-"Splits Past" column, data source: yfinance. I want the data to appear as shown in this screenshot (check function get_splits from splits.py):
 ![image](https://github.com/Keukoo/Stocks-Watchlist/assets/138369317/e9f646a0-503c-4326-958c-f10a1274ba92)
 
 
