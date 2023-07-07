@@ -1,4 +1,8 @@
-Remember that you need to install TWS in order to run watchlist.py. https://www.interactivebrokers.com/en/trading/tws.php. You don't need to create an account when you download it, there's an option: 'Try demo'. When you click on it you just need to write some random email to log in. Then to set up the API you have to go to File -> Global Configuration -> API -> Settings -> Enable ActiveX and Socket clients and also uncheck Read-Only API.
+Remember that you need to install TWS in order to run watchlist.py.
+
+https://www.interactivebrokers.com/en/trading/tws.php or https://www.interactivebrokers.com/en/trading/tws-offline-installers.php.
+
+You don't need to create an account when you download it, there's an option: 'Try demo'. When you click on it you just need to write some random email to log in. Then to set up the API you have to go to File -> Global Configuration -> API -> Settings -> Enable ActiveX and Socket clients and also uncheck Read-Only API.
 
 Updated 07-07-2023
 
@@ -26,6 +30,7 @@ DONE (seems to work fine):
 -Get Sector, Industry and Float for each symbol from finviz library. Then calculate Volume/Float (volume/floatx100), from Interactive/Finviz data sources.
 
 What it shows right now:
+*if you see 'nan' data it's probably because market is closed
 ![image](https://github.com/Keukoo/Stocks-Watchlist/assets/138369317/468ac89e-d80d-4520-b798-579a27c77cea)
 
 
@@ -34,7 +39,7 @@ TO DO:
 
 -I need all of the data from the columns 'News', 'Sector', 'Industry', 'Splits Past', to be checking for new info every second, but only upload the pyqt table when there is new info or different info.
 
--News column, data source: yfinance and stocktitan.net. News should appear in a dropdown list for each symbol, sorted from most recent to oldest, along with the data source, date and headline, as shown in the screenshot below. Additionally, clicking on a headline from the dropdown should redirect to the corresponding Yahoo Finance or Stock Titan link (refer to splits.py -> get_news for an example). If a headline corresponds to the current day, change the cell color to blue, similar to the behavior in splits.py (refer to the screenshot below).
+-News column, data source: yfinance and stocktitan.net. News should appear in a dropdown list for each symbol, sorted from most recent to oldest, along with the data source, date and headline, as shown in the screenshot below. Additionally, clicking on a headline from the dropdown should redirect to the corresponding Yahoo Finance or Stock Titan link (refer to splits.py -> get_news for an example). If a headline corresponds to the current day, change the cell color to blue, similar to the behavior in splits.py (refer to the screenshot below). If we get a new headline I want the cell color to be darkGold and an mp3 alert, the cell color will change to blue again when the headline is clicked by the user.
 
 -"Sector" and "Industry" columns, data source: finviz module, I need to display not only the sector and industry for each symbol but also the daily growth ranking number and the growth percentage of the sector and industry, as shown in the screenshot. For example, "5- Healthcare (-1.04%)" would mean that after checking with finviz for the sectors and industries with the highest percentage growth today, the Healthcare sector is in the top 5 but has lost 1.04% today. (check splits.py -> get_splits for an example, but they do not upload every second). If the sector or industry has a positive % then change the cell color to darkgold like in splits.py (check screenshot below)
 ![image](https://github.com/Keukoo/Stocks-Watchlist/assets/138369317/a20c2e55-ebcc-45a0-bea6-4a3cb5c3424a)
