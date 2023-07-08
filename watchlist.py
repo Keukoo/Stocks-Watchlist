@@ -311,10 +311,10 @@ class Window(qt.QWidget):
         self.ib.connect(*self.connectInfo)
         if datetime.now().hour >= 10:
             print('Datos en tiempo real')
-            self.ib.reqMarketDataType(1) #1 para datos en tiempo real, #2 para datos cuando el mercado esté cerrado
+            self.ib.reqMarketDataType(3) #1 para datos en tiempo real, #2 para datos cuando el mercado esté cerrado
         else:
             print('Datos con delay porque el mercado está cerrado')
-            self.ib.reqMarketDataType(2)
+            self.ib.reqMarketDataType(3)
         with open('symbols.txt', 'r') as file:
             symbols = [line.strip().split(',')[0] for line in file]
         for symbol in symbols:
